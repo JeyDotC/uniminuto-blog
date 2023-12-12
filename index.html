@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Desarrollo de Software Seguro para Empleados Civiles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-control page-control-left d-flex align-items-center ps-3">
+        &lt;
+    </div>
+    <div class="page-control page-control-right d-flex align-items-center ps-3">
+        &gt;
+    </div>
+    <div class="view view-active">
+        <div class="page w-50 p-3 bg-primary rounded-start">
+            <div class="text-end">
+                <img src="img/oni-logo.png" />
+            </div>
+            <h1 class="text-white w-75">
+                Guía de Desarrollo de Software Seguro para Empleados Civiles
+            </h1>
+
+            <p class="text-white mt-5 fs-6">
+                © 2552 Oficina de Inteligencia Naval del Comando Espacial de las Naciones Unidas
+            </p>
+        </div>
+        <div class="page w-50 border-start rounded-end">
+            <div class="text-center p-5">
+                <img src="img/oni-logo.png" width="200px" />
+            </div>
+
+            <h1 class="m-auto text-center w-75">
+                Guía de Desarrollo de Software Seguro para Empleados Civiles
+            </h1>
+
+            <h3 class="m-auto text-center w-50 my-5 fw-lighter">
+                Jeysson Jose Guevara Mendivil
+            </h3>
+
+            <p class="text-center">
+                11 de diciembre de 2023
+            </p>
+        </div>
+    </div>
+    <div class="view">
+        <div class="page w-50 rounded-start">
+            <div class="p-5">
+                <h2>Contenido</h2>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between">
+                        <span>Introducción</span>
+                        <span>04</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <span>Lenguajes backend aprobados</span>
+                        <span>05</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <span>Política de artefactos firmados</span>
+                        <span>06</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <span>Proveedor de OAuth autorizado</span>
+                        <span>08</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <span>Conclusiones</span>
+                        <span>09</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <span>Referencias</span>
+                        <span>10</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page w-50 border-start rounded-end">
+            <img src="img/oni-offices.jpg" width="100%" />
+            <div class="p-5">
+                <h2>Introducción</h2>
+                <p>
+                    La Oficina de Inteligencia Naval le da la bienvenida como nuevo miembro del departamento de
+                    relaciones
+                    públicas.
+                </p>
+                <p>
+                    Su misión, como ingeniero de software, será la de crear aplicaciones y sitios web que permitan al
+                    público general mantenerse informados sobre la versión oficial de los hechos en el frente de
+                    batalla.
+                </p>
+                <p>
+                    El propósito de esta cartilla es proveer una rápida introducción a las políticas de seguridad del
+                    departamento a la hora de crear nuevas aplicaciones expuestas al público.
+                </p>
+                <p>
+                    La misma está dirigida a todos aquellos nuevos empleados que participen en la construcción de medios
+                    de
+                    difusión de información a civiles, principalmente a Ingenieros de Software y desarrolladores web.
+                </p>
+            </div>
+            <div class="p-3 bg-cs d-flex">
+                <img src="img/elites.jpg" class="w-50" />
+                <p class="text-white ms-2">La seguridad de los usuarios es de suma importancia para la ONI, es por esto
+                    que usted deberá seguir estrictamente las normas y buenas prácticas de seguridad que se detallan en
+                    este documento.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="view">
+        <div class="page w-50 rounded-start">
+            <div class="p-5">
+                <h1>Lenguajes backend aprobados</h1>
+                <p>Debido a su equilibrio entre facilidad de uso y opciones de seguridad, se recomienda crear todas las
+                    aplicaciones de servidor con uno de los siguientes lenguajes.</p>
+            </div>
+            <div class="mb-5 d-flex justify-content-end ps-5">
+                <div class="d-flex text-white bg-cs py-3 pe-3">
+                    <img src="img/cs-logo.png" width="130" />
+                    <div>
+                        <h3>C# (C-Sharp)</h3>
+                        <p>Éste lenguaje creado por Microsoft cuenta con gran cantidad de bibliotecas de seguridad y
+                            encriptación, incluyendo su implementación de OAuth: Identity Server.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5 d-flex pe-5">
+                <div class="d-flex text-danger bg-java py-3 ps-3">
+                    <div>
+                        <h3>Java</h3>
+                        <p>Respaldado por la centenaria empresa Oracle, Java es un lenguaje probado en combate, con una
+                            amplia biblioteca de clases y proyectos que permiten la implementación de cualquier
+                            protocolo o práctica de seguridad.
+                        </p>
+                    </div>
+                    <img src="img/java-logo.png" />
+                </div>
+            </div>
+            <p class="text-center fs-4">Para conocer más sobre cada lenguaje, diríjase a su correspondiente sitio web
+            </p>
+            <div class="d-flex">
+                <div class="bg-java text-danger">
+                    <div>
+                        <img src="img/java-QR-code.png" class="w-50" />
+                        <span class="fs-2 ms-3">
+                            Java
+                        </span>
+                    </div>
+                    <p class="text-center mt-3">
+                        <a href="http://tinyurl.com/bd4w9nhy" target="_blank"
+                            class="text-danger">http://tinyurl.com/bd4w9nhy</a>
+                    </p>
+                </div>
+                <div class="bg-cs text-white">
+                    <div class="text-end">
+                        <span class="fs-2 me-3">
+                            C#
+                        </span>
+                        <img src="img/cs-QR-code.png" class="w-50" />
+                    </div>
+                    <p class="text-center mt-3">
+                        <a href="http://tinyurl.com/mrxravtk" target="_blank"
+                            class="text-white">http://tinyurl.com/mrxravtk</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="page w-50 border-start rounded-end">
+            <div class="d-flex p-3">
+                <div class="me-2">
+                    <h1>Política de artefactos firmados.</h1>
+                    <p>Asegurarnos de que el código que se ejecuta nuestros servidores ha sido creado por personal
+                        autorizado es un asunto de seguridad importante.</p>
+
+                    <p> Es por ello que todos los artefactos ejecutables, sean DLL o archivos JAR, deben ser firmados
+                        antes
+                        de ser desplegados a producción.</p>
+                </div>
+                <img src="img/ODST.png" class="w-50" />
+            </div>
+            <p class="bg-cs fs-5 p-3 text-white">
+                Para impedir la entrada de ejecutables maliciosos, se debe incluir un paso de firmado de archivos
+                compilados en todo proceso de integración continua que apunte hacia producción. No hacerlo es una falta
+                grave y puede estar sujeta a corte marcial.
+            </p>
+            <img src="img/kigjar.png" />
+        </div>
+    </div>
+    <div class="view">
+        <div class="page w-50 rounded-start">
+            <p class="mt-3">A continuación, se puede observar un par de fragmentos de código de línea de comandos con
+                los que se puede firmar, ya sea una DLL o un archivo JAR.</p>
+            <div class="d-flex justify-content-end mb-5">
+                <div class="bg-java-light ms-auto p-3">
+                    <h4>Firmando un archivo JAR</h4>
+                    <p class="bg-dark text-light p-2">jarsigner -keystore mykeys -tsa http://tsa.url.example.com app.jar
+                        johndoe</p>
+                    <div class="d-flex align-items-start justify-content-end">
+                        <p class="w-50">
+                            Para más información sobre firmado de archivos JAR, siga esta URL:
+                        </p>
+                        <a href="http://tinyurl.com/484c9dnr">
+                            <img src="img/java-QR-signing.png" width="200" />
+                            <span class="d-block">http://tinyurl.com/484c9dnr</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="bg-cs-light p-3">
+                    <h4>Firmando un archivo DLL</h4>
+                    <p class="bg-dark text-light p-2">al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk</p>
+                    <div class="d-flex align-items-start justify-content-end">
+                        <p class="w-50">
+                            Para más información sobre firmado de archivos DLL, siga esta URL:
+                        </p>
+                        <a href="http://tinyurl.com/yknnumka">
+                            <img src="img/cs-QR-signing.png" width="200" />
+                            <span class="d-block">http://tinyurl.com/yknnumka</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page w-50 border-start rounded-end">
+            <div class="bg-superintendent">
+                <div class="bg-superintendent-server p-3">
+                    <h1 class="w-50 text-white mb-5">Proveedor de OAuth autorizado</h1>
+                </div>
+                <div class="d-flex p-3">
+                    <div class="w-75">
+                        <p>
+                            Es de conocimiento general que las inteligencias artificiales clase Superintendente
+                            (Superintendent-Class AI) son el mecanismo más fiable de identificación de usuarios.
+                        </p>
+                        <p>
+                            Es por ello que se les ha solicitado generar una API que cumpla con el estándar OAuth.
+                        </p>
+                        <p>
+                            Puede hablar con el Superintendente de su ciudad para agregar las aplicaciones en las que
+                            esté
+                            trabajando a su lista de apps autorizadas, también para guiarlo en el proceso de creación de
+                            ambientes de prueba y producción.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/superintendent-logo.png" width="200" />
+                    </div>
+                </div>
+                <div class="d-flex pb-2">
+                    <div class="d-flex align-items-center">
+                        <div class="p-3 bg-cs text-white fs-5">
+                            <p>Recuerde, sólo las API OAuth provistas por cada Superintendente son permitidas como
+                                mecanismo de
+                                autenticación de ciudadanos.</p>
+                            <p>Otros proveedores pueden ser vulnerables ante ataques del Covenant.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/huragok.png" width="200" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view">
+        <div class="page w-50 rounded-start">
+            <div class="p-3 text-center">
+                <img src="img/oni-logo.png" />
+            </div>
+            <div class="w-50 p-3">
+                <h1>Conclusiones</h1>
+                <p>La seguridad de los ciudadanos muchas veces depende de brindarles la información que necesitan de
+                    manera
+                    fiable y segura.</p>
+                <p>De usted depende que el público general tenga acceso a dicha información, sin poner en riesgo sus
+                    datos o
+                    su identidad.</p>
+                <p>Si tiene dudas sobre medidas de seguridad, hable con su oficial al mando o con el superintendente de
+                    su
+                    ciudad.</p>
+            </div>
+        </div>
+        <div class="page w-50 border-start rounded-end">
+            <div class="p-3">
+                <h1>Referencias</h1>
+                <p>
+                    Ortega, J. (2018). Programación segura en aplicaciones de comercio electrónico. En: <em>Seguridad en aplicaciones Web Java</em> (pp. 62-94) [versión electrónica]. RA-MA Editorial.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/controls.js"></script>
+</body>
+
+</html>

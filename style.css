@@ -1,0 +1,70 @@
+.view {
+    display: none;
+}
+
+.view.view-active {
+    display: flex;
+}
+
+.view.active .page {
+    width: 50%;
+    height: 100%;
+}
+
+.view.active .page:nth-child(1) {
+    border-right: solid 1px black;
+}
+
+body {
+    --bs-primary: green;
+    --bs-primary-rgb: 16, 5, 57;
+}
+
+.page-control {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    opacity: 0;
+    background: black;
+    color: white;
+    width: 4rem;
+}
+
+.page-control:hover {
+    opacity: .75;
+}
+
+.page-control.page-control-left {
+    left: 0;
+}
+
+.page-control.page-control-right {
+    right: 0;
+}
+
+.bg-cs {
+    background-color: rgb(126, 87, 194);
+}
+
+.bg-java {
+    background-color: rgb(255, 202, 40);
+}
+
+.bg-cs-light {
+    background-color: rgba(126, 87, 194, .75);
+}
+
+.bg-java-light {
+    background-color: rgba(255, 202, 40, .75);
+}
+
+.bg-superintendent {
+    background-color: rgb(156, 204, 101);
+}
+
+.bg-superintendent-server {
+    background-image: url(img/supereintendent-server.png);
+    background-repeat: no-repeat;
+}
